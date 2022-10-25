@@ -24,16 +24,34 @@ body {
     height: auto;
     padding: 30px;
     border-radius: 20px;
-    background-color: hsl(215, 23%, 14%);
+    background-image: linear-gradient(
+    180deg,
+    hsl(213, 19%, 18%),
+    hsl(216, 12%, 10%)
+  );
+}
+
+/* Helper classes */
+.show {
+    display: inline-block!important;
+}
+
+.hide {
+    display: none;
+}
+
+.active {
+    background-color: hsl(217, 12%, 63%)!important;
+    color: hsl(0, 0%, 100%)!important;
 }
 
  /* Rating component */
 .rating {
-    /* display: none; */
+
 }
 
 .rating__star-box {
-    background-color: hsl(210, 19%, 18%);
+    background-color: hsl(213, 19%, 23%);
     padding: 10px;
     width: 20px;
     border-radius: 50%;
@@ -66,7 +84,7 @@ body {
     justify-content: space-between;
 }
 
-.rating__select-individual {
+.rating__label {
     background-color: hsl(210, 19%, 18%);
     color: hsl(217, 12%, 63%);
     /* padding: 15px 20px 15px 20px; */
@@ -80,12 +98,12 @@ body {
     align-items: center;
 }
 
-.rating__select-individual:hover {
+.rating__label:hover {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
 
-.rating__select-individual:active {
+.rating__label:active {
     background-color: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
 }
@@ -112,7 +130,7 @@ body {
 
 /* Thank you component */
 .thanks {
-
+    display: none;
 }
 .thanks > .container {
     display: flex;
@@ -139,9 +157,9 @@ body {
 }
 
 .thanks__title {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 22.5px;
 }
 
 .thanks__text {
