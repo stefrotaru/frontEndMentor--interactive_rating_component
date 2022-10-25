@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+}
+
+.container {
+    width: 330px;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: hsl(215, 23%, 14%);
+}
+
+ /* Rating component */
+.rating {
+    /* display: none; */
+}
+
+.rating__star-box {
+    background-color: hsl(210, 19%, 18%);
+    padding: 10px;
+    width: 20px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.rating__star {
+    content: url(../images/icon-star.svg);
+}
+
+.rating__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0px 10px 0px;
+}
+
+.rating__cta-text {
+    margin: 10px 0px 10px 0px;
+    color: hsl(217, 12%, 63%);
+    line-height: 25px;
+}
+
+.rating__select-group {
+    margin: 20px 0px 20px 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating__select-individual {
+    background-color: hsl(210, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    /* padding: 15px 20px 15px 20px; */
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating__select-individual:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rating__select-individual:active {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rating__submit {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 20px;
+
+    width: 100%;
+    height: 40px;
+    
+    cursor: pointer;
+}
+
+.rating__submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+/* Thank you component */
+.thanks {
+
+}
+.thanks > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks__image {
+    content: url(../images/illustration-thank-you.svg);
+}
+
+.thanks__rating-box {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    margin: 27.5px 0px 27.5px 0px;
+    padding: 7.5px 15px 7.5px 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.thanks__rating-counter {
+
+}
+
+.thanks__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.thanks__text {
+    width: 340px;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+}
+
+
+/* Given footer */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
